@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Car from './car.jsx';
 
-const initialCarsData = [
+const CarsData = [
   {
     model: 'Ford Mustang',
     power: '355 cv',
@@ -35,7 +35,7 @@ const initialCarsData = [
 
 const Catalog = () => {
   const [currentCarIndex, setCurrentCarIndex] = useState(0);
-  const [carsData, setCarsData] = useState(initialCarsData);
+  const [carsData, setCarsData] = useState(CarsData);
   const [newCar, setNewCar] = useState({ model: '', power: '', manufacturingDate: '', price: '', image: '' });
   const hasPreviousCar = currentCarIndex > 0;
   const hasNextCar = currentCarIndex < carsData.length - 1;
