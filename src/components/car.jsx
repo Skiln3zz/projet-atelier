@@ -9,7 +9,7 @@ const Car = ({ car, onRemoveCar }) => (
     <p>Puissance : {car.power}</p>
     <p>Date de fabrication : {car.manufacturingDate}</p>
     <p>Prix actuel: {car.price}</p>
-    <button onClick={() => onRemoveCar(car)}>Mettre à la casse</button> {/* Utilisez la fonction onRemoveCar */}
+    <button onClick={() => onRemoveCar(car)}>Mettre la voiture à la casse</button> {/* Utilisez la fonction onRemoveCar */}
   </div>
 );
 
