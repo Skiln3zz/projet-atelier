@@ -30,7 +30,6 @@ const CarsData = [
     price: '70k €',
     image: 'z4.png',
   },
-  // Ajoutez d'autres voitures ici
 ];
 
 const Catalog = () => {
