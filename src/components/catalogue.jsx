@@ -71,7 +71,9 @@ const Catalog = () => {
   return (
     <div className="catalog">
       <h1>Catalogue de voitures</h1>
-      <Car car={currentCar} onRemoveCar={removeCar} />
+      {carsData.map((car, index) => (
+        <Car key={index} car={car} onRemoveCar={removeCar} />
+        ))}
       <div className="buttons">
         {hasPreviousCar && (
           <button onClick={goToPreviousCar}>Voiture Précédente</button>
